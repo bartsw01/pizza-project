@@ -14,7 +14,7 @@ _{User will be able to order a custom pizza by choosing the size and the options
 | ------------- | ------------- | ------------- |
 | It will allow the user to choose the size of pizza. | small  | "small"  |
 | It will allow the user to add custom toppings | pepperoni  | "pepperoni" |
-| It will have the user submit the order and show a receipt | Large Pizza |  Large Pizza = $5.00 |         
+| It will have the user submit the order and show a receipt | Small Pepperoni Pizza |   $5.00 |         
 |  |  |   |
 |  |  |  |
 
