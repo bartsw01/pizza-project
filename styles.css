@@ -1,0 +1,22 @@
+#show-pizza {
+  display: none;
+}
+body {
+  background-color: #474f5b;
+}
+.jumbotron {
+  margin: 5px;
+  border: 2px #d7dae0;
+  padding: 4px;
+}
+img.pizza {
+  float:left;
+  width: 200px;
+  border: 4px black;
+}
+.pizza-form{
+  margin: 5px;
+  border: 2px black;
+  background-color: #d7dae0;
+  padding: 20px;
+}
