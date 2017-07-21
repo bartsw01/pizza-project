@@ -28,25 +28,19 @@ $(document).ready(function(){
   $("form#pizza-form").submit(function(event){
     event.preventDefault();
     var pizzaSize = parseInt($("#pizza-size").val());
-    var toppingScore = parseInt($("input:checkbox[name=pizza-toppings]:checked").val());
+    var userToppingScore = 0;
+    var toppingScore = parseInt(userToppingScore);
 
-    // $("input:checkbox[name=pizza-toppings]:checked").each(function(){
-    //   pizzaToppingScore = pizzaToppingScore + 1;
-    // });
-    // alert(pizzaToppingScore);
+    $("input:checkbox[name=pizza-toppings]:checked").each(function(){
+      userToppingScore = userToppingScore + 1;
+    });
+    alert(userToppingScore);
 
     var newPizza = new Pizza(pizzaSize, toppingScore);
 
-
-
-
-
-
-
-
     $(".pizza-size").text(pizzaSize);
-    $(".pizza-toppings").text(toppingScore);
-    $(".pizza-price").text(newPizza.pizzaPrice());
+    $(".pizza-toppings").text(userToppingScore);
+    $(".pizza-price").text("$" + newPizza.pizzaPrice() + ".00");
 
     $("#show-pizza").show();
 
