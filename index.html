@@ -9,33 +9,36 @@
   <body>
     <div class="container">
       <h1 class="jumbotron">Pizza Order Form</h1>
+
       <form id="pizza-form">
-        <select class="form-control" id="pizza">
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="giant">Giant</option>
-        </select>
-        <select class="form-control" id="time">
-          <option value="0">8:00am</option>
-          <option value="1">11:00am</option>
-          <option value="2">5:00pm</option>
-          <option value="3">8:00pm</option>
-
-        </select>
-        <select class="form-control" id="age">
-          <option value="0">none</option>
-          <option value="1">Senior Discount</option>
-        </select>
-
-        <button type="submit" name="button">Submit</button>
+        <div class="jumbotron">
+          <p>Choose your size of pizza:</p>
+          <select class="form-control" id="pizza">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div>
+        <div class="jumbotron">
+          <div class=form-group>
+            <p>Choose your toppings:</p>
+            <input type="checkbox" name="pizza-toppings" value=1>Cheese<br>
+            <input type="checkbox" name="pizza-toppings" value=1>Pepperoni<br>
+            <input type="checkbox" name="pizza-toppings" value=1>Sausage<br>
+            <!-- <input type="checkbox" name="pizza-toppings" value=1>Bell Peppers<br>
+            <input type="checkbox" name="pizza-toppings" value=1>Olives<br>
+            <input type="checkbox" name="pizza-toppings" value=1>Bell Peppers<br>
+            <input type="checkbox" name="pizza-toppings" value=1>Anchovies<br> -->
+          </div>
+        </div>
+        <button type="submit" name="button">Place Order</button>
       </form>
       <div class="col-md-6">
-        <div id="show-movie">
+        <div id="show-pizza">
           <h2></h2>
-          <p>Movie name: <span class="movie-name"></span></p>
-          <p>Showtime: <span class="movie-time"></span></p>
-          <p>Price: <span class="movie-price"></span></p>
+          <p>Pizza Size: <span class="pizza-size"></span></p>
+          <p>Toppings: <span class="pizza-toppings"></span></p>
+          <p>Price: <span class="pizza-price"></span></p>
 
         </div>
       </div>
