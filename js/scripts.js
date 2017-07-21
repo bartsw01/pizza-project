@@ -1,11 +1,11 @@
 // Business Logic
-function Pizza(pizzaSize, toppingScore){
-  this.pizzaSize = pizzaSize;
+function Pizza(pizzaSizeValue, toppingScore){
+  this.pizzaSizeValue = pizzaSizeValue;
   this.toppingScore = toppingScore;
 }
 
 Pizza.prototype.pizzaPrice = function(){
-  return this.pizzaSize + this.toppingScore
+  return this.pizzaSizeValue + this.toppingScore
 }
 
 
@@ -27,7 +27,10 @@ Pizza.prototype.pizzaPrice = function(){
 $(document).ready(function(){
   $("form#pizza-form").submit(function(event){
     event.preventDefault();
-    var pizzaSize = parseInt($("#pizza-size").val());
+    var pizzaSize = $("#pizza-size option:selected").text();
+
+    alert(pizzaSize);
+    var pizzaSizeValue = parseInt($("#pizza-size").val());
     var userToppingScore = 0;
     var toppingScore = parseInt(userToppingScore);
 
@@ -36,7 +39,7 @@ $(document).ready(function(){
     });
     alert(userToppingScore);
 
-    var newPizza = new Pizza(pizzaSize, toppingScore);
+    var newPizza = new Pizza(pizzaSizeValue, toppingScore);
 
     $(".pizza-size").text(pizzaSize);
     $(".pizza-toppings").text(userToppingScore);
