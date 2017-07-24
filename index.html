@@ -8,12 +8,25 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="jumbotron">Pizza Order Form</h1>
-
+      <div class="jumbotron">
+      <h1>Pizza Order Form</h1>
+      <h2>Sizes:</h2>
+      <ul>
+        <li>Small: $6.00</li>
+        <li>Medium: $8.00</li>
+        <li>Large: $10.00</li>
+      </ul>
+      <h2><em>Toppings</em></h2>
+      <ol>
+        <li>Cheese: $1.00</li>
+        <li>Pepperoni: $1.00</li>
+        <li>Sausage: $1.00</li>
+      </ol>
+      </div>
       <form id="pizza-form">
         <div class="jumbotron">
           <img class="pizza" src="img/pepperoni.jpg" alt="Pepperoni Pizza Picture">
-          <p>Choose your size of pizza:</p>
+          <p><strong>Choose your size of pizza:</strong></p>
           <select class="form-control" id="pizza-size">
             <option id="small" value="6">Small</option>
             <option id="medium" value="8">Medium</option>
